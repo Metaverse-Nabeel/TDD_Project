@@ -4,7 +4,7 @@ RSpec.describe Reverse do
   include Reverse
 
   describe '#reverse' do
-    it 'should reverses a word correctly' do
+    it 'should reverse the word provided correctly' do
       reversed = reverse('Nabeel')
       expect(reversed).to eq('leebaN')
     end
