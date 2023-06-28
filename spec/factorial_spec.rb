@@ -12,7 +12,7 @@ describe Factorial do
       expect(calculator.find(0)).to eq(1)
     end
 
-    it 'should raise an error when given a negative number correctly' do
+    it 'should raise an error when given a negative number correctly ' do
       calculator = Factorial.new
       expect { calculator.find(-1) }.to raise_error(ArgumentError, 'Number must be greater than or equal to 0.')
     end
