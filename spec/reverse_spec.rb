@@ -1,12 +1,15 @@
-require_relative '../reverse'
+require_relative '../solver'
 
-RSpec.describe Reverse do
-  include Reverse
+describe Solver do
+  let(:solver) { Solver.new }
 
-  context '#reverse' do
-    it 'should reverses a word correctly' do
-      reversed = reverse('Nabeel')
-      expect(reversed).to eq('leebaN')
+  describe '#reverse' do
+    it 'returns "olleh" for reverse("hello")' do
+      expect(solver.reverse('hello')).to eq('olleh')
+    end
+
+    it 'returns "dcba" for reverse("abcd")' do
+      expect(solver.reverse('abcd')).to eq('dcba')
     end
   end
 end
