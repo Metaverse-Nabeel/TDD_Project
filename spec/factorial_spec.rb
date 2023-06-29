@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 require_relative '../solver'
 
 describe Solver do

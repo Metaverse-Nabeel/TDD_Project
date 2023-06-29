@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 require_relative '../solver'
 
 describe Solver do
@@ -24,4 +21,3 @@ describe Solver do
     end
   end
 end
->>>>>>> f853196 (Correct fizzbuzz spec)
