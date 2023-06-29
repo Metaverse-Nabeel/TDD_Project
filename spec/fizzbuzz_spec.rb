@@ -1,27 +1,23 @@
-require_relative '../fizzbuzz'
+require_relative '../solver'
 
-describe Fizzbuzz do
-  context '#fizzbuzz' do
-    include Fizzbuzz
+describe Solver do
+  let(:solver) { Solver.new }
 
-    it 'should return "fizz" when the number is divisible by 3' do
-      result = fizzbuzz(12)
-      expect(result).to eq('fizz')
+  describe '#fizzbuzz' do
+    it 'returns "fizz" for fizzbuzz(3)' do
+      expect(solver.fizzbuzz(3)).to eq('fizz')
     end
 
-    it 'should return "buzz" when the number is divisible by 5' do
-      result = fizzbuzz(20)
-      expect(result).to eq('buzz')
+    it 'returns "buzz" for fizzbuzz(5)' do
+      expect(solver.fizzbuzz(5)).to eq('buzz')
     end
 
-    it 'should return "fizzbuzz" when the number is divisible by both 3 and 5' do
-      result = fizzbuzz(30)
-      expect(result).to eq('fizzbuzz')
+    it 'returns "fizzbuzz" for fizzbuzz(15)' do
+      expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
     end
 
-    it 'should return the number as a string when it is not divisible by 3 or 5' do
-      result = fizzbuzz(16)
-      expect(result).to eq('16')
+    it 'returns "7" for fizzbuzz(7)' do
+      expect(solver.fizzbuzz(7)).to eq('7')
     end
   end
 end

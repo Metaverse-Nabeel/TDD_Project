@@ -13,7 +13,7 @@ describe Solver do
     end
 
     it 'raises an error for factorial(-1)' do
-      expect { solver.factorial(-1) }.to raise_error(ArgumentError, "Factorial is undefined for negative numbers.")
+      expect { solver.factorial(-1) }.to raise_error(ArgumentError, 'Factorial is undefined for negative numbers.')
     end
   end
 end
