@@ -1,13 +1,7 @@
 require_relative '../solver'
 
-<<<<<<< HEAD
 describe Solver do
   let(:solver) { Solver.new }
-=======
-describe Fizzbuzz do
-  describe '#fizzbuzz' do
-    include Fizzbuzz
->>>>>>> parent of 6127f3a (Add Solver class)
 
   describe '#fizzbuzz' do
     it 'returns "fizz" for fizzbuzz(3)' do

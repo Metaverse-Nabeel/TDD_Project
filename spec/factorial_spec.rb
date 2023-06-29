@@ -1,19 +1,11 @@
 require_relative '../solver'
 
-<<<<<<< HEAD
 describe Solver do
   let(:solver) { Solver.new }
 
   describe '#factorial' do
     it 'returns 1 for factorial(0)' do
       expect(solver.factorial(0)).to eq(1)
-=======
-describe Factorial do
-  describe '#find' do
-    it 'should return the factorial of a positive number' do
-      calculator = Factorial.new
-      expect(calculator.find(5)).to eq(120)
->>>>>>> parent of 6127f3a (Add Solver class)
     end
 
     it 'returns 120 for factorial(5)' do
