@@ -1,7 +1,7 @@
 require_relative '../fizzbuzz'
 
 describe Fizzbuzz do
-  describe '#fizzbuzz' do
+  context '#fizzbuzz' do
     include Fizzbuzz
 
     it 'should return "fizz" when the number is divisible by 3' do

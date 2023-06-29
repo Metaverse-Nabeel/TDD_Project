@@ -1,7 +1,7 @@
 require_relative '../factorial'
 
 describe Factorial do
-  describe '#find' do
+  context '#find' do
     it 'should return the factorial of a positive number' do
       calculator = Factorial.new
       expect(calculator.find(5)).to eq(120)
